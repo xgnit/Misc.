@@ -1,5 +1,6 @@
 for Python:
 
+NPP_SAVE
 cmd /k Python -u "$(FULL_CURRENT_PATH)" & ECHO. & PAUSE & EXIT
 NPP_CONSOLE 0
 
