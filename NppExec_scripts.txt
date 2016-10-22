@@ -1,0 +1,14 @@
+for Python:
+
+cmd /k Python -u "$(FULL_CURRENT_PATH)" & ECHO. & PAUSE & EXIT
+NPP_CONSOLE 0
+
+
+
+
+for c++:
+
+NPP_SAVE
+cd $(CURRENT_DIRECTORY)
+cmd /k qmake *.pro &  mingw32-make & echo off & cd release &  for %x in (*.exe) do ( start "" /b  %x )  &  echo. &  echo.  & ECHO. & pause >nul & EXIT 
+NPP_CONSOLE 0
