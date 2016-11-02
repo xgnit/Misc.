@@ -18,9 +18,8 @@ NPP_CONSOLE 0
 for c++:(single file)
 
 NPP_SAVE
-cmd /c   cd $(CURRENT_DIRECTORY) & g++ -Wall -g -std=c++11 $(NAME_PART).cpp -o  $(NAME_PART) & echo.  & $(NAME_PART).exe  &  echo. &  echo. & echo. & pause  &EXIT 
+npp_run cmd /c   "cd $(CURRENT_DIRECTORY) & g++ -Wall -std=c++11 $(NAME_PART).cpp -o  $(NAME_PART) & echo.  & $(NAME_PART).exe  &  echo. &  echo. & echo. & pause"
 NPP_CONSOLE 0
-
 
 
 Plugins for c++:
