@@ -7,12 +7,21 @@ NPP_CONSOLE 0
 
 
 
-for c++:
+for c++:(project)
 
 NPP_SAVE
 cd $(CURRENT_DIRECTORY)
 cmd /k qmake *.pro &  mingw32-make & echo off & cd release &  for %x in (*.exe) do ( start "" /b  %x )  &  echo. &  echo.  & ECHO. & pause >nul & EXIT 
 NPP_CONSOLE 0
+
+
+for c++:(single file)
+
+NPP_SAVE
+cmd /c cd $(CURRENT_DIRECTORY) & g++ $(NAME_PART).cpp -o  $(NAME_PART) & echo. & echo. &$(NAME_PART).exe  &  echo. &  echo. & echo. & pause  &EXIT
+NPP_CONSOLE 0
+
+
 
 Plugins for c++:
 CCompletion, GuidGuard, NppAutoindent, NppExec, SourceSwitch, TagsJump
