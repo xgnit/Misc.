@@ -19,7 +19,7 @@ for c++:(single file)
 
 NPP_CONSOLE 0
 NPP_SAVE 
-npp_run cmd /c   " cd $(CURRENT_DIRECTORY) & del $(NAME_PART).exe >nul 2>&1 & g++ -Wall -std=c++11 $(NAME_PART).cpp -o  $(NAME_PART) & echo. & $(NAME_PART).exe  &  echo. &  echo. & echo. & pause"
+npp_run cmd /c   " cd $(CURRENT_DIRECTORY) & del $(NAME_PART).exe >nul 2>&1 & g++ -O2 -Wall -std=c++11 $(NAME_PART).cpp -o  $(NAME_PART) & echo. & $(NAME_PART).exe  &  echo. &  echo. & echo. & pause"
 
 
  
