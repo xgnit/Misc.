@@ -1,0 +1,13 @@
+1. download ngrok and extract file
+
+2. either direct run ngrok or run in background. The method to run it in background:
+download screen("apt-get install screen"), "screen -S name(a random name)", 
+run ngrok with"ngrok tcp -region eu 22"(change the region if necessary),
+press ctrl+A+D
+
+3. connect from a remote pc with ssh(e.g. putty)
+
+notes: 
+if putty disconnected due to idle, open putty, go to "connection", give a value for "seconds between keepalives", for example 900.
+enable "enable TCP keepalives(SO_KEEPALIVE option)"
+remember to write down the random url assigned by the ngrok server
