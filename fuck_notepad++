@@ -9,3 +9,11 @@ for c++:
 
  "cmd": ["del", "${file_base_name}", "&", "g++", "-Wall", "-std=c++11", "${file}", "-o", "${file_path}/${file_base_name}", "&", "start", "cmd", "/c", "${file_base_name} & echo. & pause"],
 }
+
+
+
+
+
+
+packages for sublime text:
+BracketHighlighter, DocBlockr
