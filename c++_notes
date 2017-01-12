@@ -1,0 +1,4 @@
+++a is left value
+a++ is right value
+
+that said a++ = 12 will be reported as error, but ++a = 12 not.
