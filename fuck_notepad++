@@ -7,7 +7,8 @@ for c++:
  "shell": true,
  "encoding":"utf-8",
 
- "cmd": ["del", "${file_base_name}.exe", "&&", "g++", "-Wall", "-std=c++11", "${file}", "-o", "${file_path}/${file_base_name}", "&&", "start", "cmd", "/c", "${file_base_name} && echo. && pause"],}
+ "cmd": ["del", "${file_base_name}.exe", "&&", "g++", "-Wall", "-std=c++11", "${file}", "-o", "${file_path}/${file_base_name}", "&&", "start", "cmd", "/c", "${file_base_name} && echo. && pause"],
+ }
 
 
 
