@@ -25,4 +25,4 @@ key binding:
 
 
 packages for sublime text:
-BracketHighlighter, DocBlockr
+BracketHighlighter, DocBlockr, easyClang_complete
