@@ -26,3 +26,5 @@ BracketHighlighter, DocBlockr, easyClang_complete
 
 The clangcomplete has the issue of not finding the isostream of gcc if you use it on windows. Try to include the iostream folder in the 
 common flags in easyclangcomplete's setting.
+
+Turn off the use_libclang option in easyClangComplete, cause it pops out error and cannot find the definition of cout, endl etc.
