@@ -27,3 +27,6 @@ npp_run cmd /c   " cd $(CURRENT_DIRECTORY) & del $(NAME_PART).exe >nul 2>&1 & g
 
 Plugins for c++:
 CCompletion, GuidGuard, NppAutoindent, NppExec, SourceSwitch, TagsJump
+
+
+setting -> style configurator -> theme -> obsidian
