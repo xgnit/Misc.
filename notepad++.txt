@@ -30,3 +30,5 @@ CCompletion, GuidGuard, NppAutoindent, NppExec, SourceSwitch, TagsJump
 
 
 setting -> style configurator -> theme -> obsidian
+
+under npp_exec -> change console font
