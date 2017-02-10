@@ -29,6 +29,6 @@ Plugins for c++:
 CCompletion, GuidGuard, NppAutoindent, NppExec, SourceSwitch, TagsJump
 
 
-setting -> style configurator -> theme -> obsidian
+setting -> style configurator -> theme -> Solarized
 
 under npp_exec -> change console font
