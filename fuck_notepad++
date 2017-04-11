@@ -36,6 +36,22 @@ SideBarEnhancements, Anaconda
 
 Sublime -> Preferences -> Package Settings -> Anaconda -> Settings User  ->  {"anaconda_linting": false}
 
+for the lover of cmd or shell:
+
+{
+"cmd": ["python", "-u", "$file"],
+"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+"selector": "source.python",
+"variants":
+[
+{
+"name": "Run",
+ "shell": true,
+ "cmd": ["start", "python","${file_base_name}.py"," & echo. & pause"]
+}
+]
+}
+
 
 
 
