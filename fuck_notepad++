@@ -1,3 +1,58 @@
+for python:
+
+keybinding: 
+[
+		{ "keys": ["alt+q"], "command": "build" },
+		{ "keys": ["ctrl+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+		{ "keys": ["f2"], "command": "goto_definition" },
+		{"keys": ["ctrl+alt+up"], "command": "goto_definition"},
+        { "keys": ["ctrl+alt+left"], "command": "jump_back" },
+        { "keys": ["ctrl+alt+right"], "command": "jump_forward" },
+]
+
+setting:
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"default_encoding": "UTF-8",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		120
+	],
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
+
+packages:
+SideBarEnhancements, Anaconda 
+
+Sublime -> Preferences -> Package Settings -> Anaconda -> Settings User  ->  {"anaconda_linting": false}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 for c++:
 
 build system:
