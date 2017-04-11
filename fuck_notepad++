@@ -8,6 +8,7 @@ keybinding:
 		{"keys": ["ctrl+alt+up"], "command": "goto_definition"},
         { "keys": ["ctrl+alt+left"], "command": "jump_back" },
         { "keys": ["ctrl+alt+right"], "command": "jump_forward" },
+	{ "keys": ["ctrl+c"], "command": "cancel_build" },
 ]
 
 setting:
