@@ -1,0 +1,9 @@
+
+Class and Dict get attributes:
+For class:
+test = Test()
+name = getattr(test, 'name', ‘not found’)
+
+for dict:
+dis = {'a':1, 'b':2, 'c':3}
+print dis.get('a','not found')
