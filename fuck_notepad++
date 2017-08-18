@@ -3,7 +3,7 @@ for python:
 keybinding: 
 [
 		{ "keys": ["alt+q"], "command": "build" },
-		{ "keys": ["ctrl+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+		{ "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
 		{ "keys": ["f2"], "command": "goto_definition" },
 		{"keys": ["ctrl+alt+up"], "command": "goto_definition"},
         { "keys": ["ctrl+alt+left"], "command": "jump_back" },
