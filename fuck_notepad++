@@ -36,8 +36,16 @@ SideBarEnhancements, Anaconda
 
 Sublime -> Preferences -> Package Settings -> Anaconda -> Settings User  ->  {"anaconda_linting": false}
 
-for the lover of cmd or shell:
+for the lover of cmd or shell: (you may need to configure xterm after this)
+{
+"cmd": ["xterm -fs 34 -e 'bash -c \"python3 -u $file;echo;echo Press ENTER to exit...; read line\"'"],
+"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+"selector": "source.python",
+"shell":true,
+}
 
+
+run it in the build-in console:
 {
 "cmd": ["python", "-u", "$file"],
 "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
