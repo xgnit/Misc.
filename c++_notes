@@ -5,3 +5,6 @@ that said a++ = 12 will be reported as error, but ++a = 12 not.
 
 
 headers should not include 'using' declarations (the files include this header will all have this using declaration -> dangerous!)
+
+exit() will not call the destructor for a auto object but only for a static object.
+e.g. if the object is a file stream, you have to be careful with it cause it will not be closed by itself.
