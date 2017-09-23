@@ -2,10 +2,10 @@
 
 
 CMD=$@
+
+
 XYZ=$(expect -c "
 set start [exec cat /sys/block/sdb/sdb2/start]
-
-
 
 spawn fdisk /dev/sdb
 expect \"*Command*\"
