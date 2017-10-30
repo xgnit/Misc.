@@ -5,9 +5,9 @@ keybinding:
 		{ "keys": ["alt+q"], "command": "build" },
 		{ "keys": ["alt+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
 		{ "keys": ["f2"], "command": "goto_definition" },
-		{"keys": ["ctrl+alt+up"], "command": "goto_definition"},
-        { "keys": ["ctrl+alt+left"], "command": "jump_back" },
-        { "keys": ["ctrl+alt+right"], "command": "jump_forward" },
+		{"keys": ["alt+up"], "command": "goto_definition"},
+        { "keys": ["alt+left"], "command": "jump_back" },
+        { "keys": ["alt+right"], "command": "jump_forward" },
 	{ "keys": ["ctrl+c"], "command": "cancel_build" },
 ]
 
