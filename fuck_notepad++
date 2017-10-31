@@ -138,6 +138,11 @@ key binding:
 
 ]
 
+wordhighlight:
+{
+    "draw_outlined": false,
+        "color_scope_name": "wordhighlight",
+}
 
 packages for sublime text:
 BracketHighlighter, DocBlockr, easyClang_complete
