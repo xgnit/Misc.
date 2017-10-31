@@ -130,13 +130,8 @@ build system:
  "cmd": ["del", "${file_base_name}.exe", "&&", "g++", "-Wall", "-std=c++11", "${file}", "-o", "${file_path}/${file_base_name}", "&&", "start", "cmd", "/c", "${file_base_name} && echo. && pause"],
  }
 
-key binding:
-[
-		{ "keys": ["alt+`"], "command": "build" },
-		{ "keys": ["ctrl+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
-		{ "keys": ["f2"], "command": "goto_definition" },
 
-]
+
 
 wordhighlight:
 {
