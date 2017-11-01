@@ -1,5 +1,0 @@
-make CC=arm-unknown-linux-gnueabi-gcc AR=arm-unknown-linux-gnueabi-ar RANLIB=arm-unknown-linux-gnueabi-ranlib CXX=arm-unknown-linux-gnueabi-g++ LD=arm-unknown-linux-gnueabi-ld WITH_UUID=no
-
-AR, RANLIB: for creation of static libs
-LD: linker
-WITH_UUID: just some random option for specific makefile
