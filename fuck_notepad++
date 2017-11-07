@@ -146,6 +146,11 @@ wordhighlight settings:
 packages for sublime text:
 BracketHighlighter, DocBlockr, easyClang_complete
 
+for easyclang_complete:
+
+"errors_style": "none",
+
+
 The clangcomplete has the issue of not finding the isostream of gcc if you use it on windows. Try to include the iostream folder in the 
 common flags in easyclangcomplete's setting.
 
