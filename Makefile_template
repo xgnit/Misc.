@@ -1,9 +1,9 @@
 CFLAGS=-Wall -ggdb -I./lib -I./lib/cpp -std=c++11
-LDFLAGS=-L./lib ./lib/cpp/libmosquittopp.so.1 ./lib/libmosquitto.so.1
+LDFLAGS=-L./lib ./lib/cpp/lib.so.1 ./lib/lib1.so.1
 
 .PHONY: all clean own_clean own_target
 
-CROSS_COMPILE=arm-unknown-linux-gnueabi-
+CROSS_COMPILE=arm-linux-gnueabi-
 CC=gcc
 CXX=${CROSS_COMPILE}g++
 
