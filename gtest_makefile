@@ -1,0 +1,18 @@
+.PHONY: clean own_target
+
+
+#LDFLAGS = -L/home/ting/Temp/code/jsoncpp/libs/linux-gcc-5.4.0/ ./jsoncpp/libs/linux-#gcc-5.4.0/libjson.a ./jsoncpp/libs/linux-gcc-5.4.0/libjson.so
+#INC = -I/home/ting/Temp/code/jsoncpp/include/json
+
+own_target : clean main
+
+CC=g++
+CFLAGS = -std=c++11 -lgtest -lgtest_main -pthread
+
+
+main: main.cpp
+	$(CC) $^ -o $@ ${CFLAGS}
+
+
+clean:
+	rm -rf main
