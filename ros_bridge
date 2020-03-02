@@ -4,6 +4,6 @@ mkdir -p /mnt/carla
 mount -t vboxsf carla /mnt/carla
 
 
-export PYTHONPATH=$PYTHONPATH:/mnt/carla/PythonAPI/carla/dist/carla-0.9.5-py3.7-win-amd64.egg
+export PYTHONPATH=$PYTHONPATH:/mnt/carla/PythonAPI/carla/dist/carla-0.9.5-py2.7-linux-x86_64.egg
 
 source ~/carla-ros-bridge/catkin_ws/devel/setup.bash
