@@ -20,4 +20,8 @@
 
     "@\U007F"   = "deleteWordBackward:";            /* C-Del        Delete word backward */
     "@\UF728"   = "deleteWordForward:";             /* C-FwdDel     Delete word forward */
+
+    "@x"        = "cut:";                           /* C-x          Cut */
+    "@y"        = "redo:";                          /* C-y          Redo */
+
 }
