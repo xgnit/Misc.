@@ -1,0 +1,23 @@
+{
+    /* Ctrl + Left */
+    /* "^\UF702"  = "moveWordLeft:"; */
+    "@\UF702"  = "moveWordLeft:";
+
+    /* Ctrl + Right */
+    /* "^\UF703"  = "moveWordRight:"; */
+    "@\UF703"  = "moveWordRight:";
+
+    /* Ctrl + Shift + Left */
+    /* "^$\UF702" = "moveWordLeftAndModifySelection:";*/
+    "@$\UF702" = "moveWordLeftAndModifySelection:";
+
+    /* Ctrl + Shift + Right */
+    /* "^$\UF703" = "moveWordRightAndModifySelection:";*/
+    "@$\UF703" = "moveWordRightAndModifySelection:";
+
+    "\UF729"    = "moveToBeginningOfLine:";         /* home         Beginning of line */
+    "\UF72B"    = "moveToEndOfLine:";               /* end          End of line */
+
+    "@\U007F"   = "deleteWordBackward:";            /* C-Del        Delete word backward */
+    "@\UF728"   = "deleteWordForward:";             /* C-FwdDel     Delete word forward */
+}
