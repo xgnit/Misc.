@@ -1,0 +1,9 @@
+    "clang-tidy.checks": [
+        "clang-analyzer-deadcode.*",
+        "clang-analyzer*",
+        "performance*",
+        "clang-analyzer-alpha.*",
+        "misc-unused*",
+        "bugprone-unused-return-value",
+        "modernize-return-braced-init-list"
+    ]
