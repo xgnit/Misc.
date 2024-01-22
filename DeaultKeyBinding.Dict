@@ -15,6 +15,12 @@
     /* "^$\UF703" = "moveWordRightAndModifySelection:";*/
     "@$\UF703" = "moveWordRightAndModifySelection:";
 
+    /* Ctrl + Shift + Home */
+    "@$\UF729" = "moveToBeginningOfLineAndModifySelection:";
+
+    /* Ctrl + Shift + End */
+    "@$\UF72B" = "moveToEndOfLineAndModifySelection:";
+
     "\UF729"    = "moveToBeginningOfLine:";         /* home         Beginning of line */
     "\UF72B"    = "moveToEndOfLine:";               /* end          End of line */
 
