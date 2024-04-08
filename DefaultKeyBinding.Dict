@@ -15,13 +15,6 @@
     /* "^$\UF703" = "moveWordRightAndModifySelection:";*/
     "@$\UF703" = "moveWordRightAndModifySelection:";
 
-    /* Ctrl + Backspace */
-    "@\U007F"  = "deleteWordBackward:";
-
-    /* Ctrl  + Delete */
-    "@\UF728"  = "deleteWordForward:";
-
-
     /* Ctrl + Shift + Home */
     "@$\UF729" = "moveToBeginningOfLineAndModifySelection:";
 
