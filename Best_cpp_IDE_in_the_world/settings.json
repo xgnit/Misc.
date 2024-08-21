@@ -7,19 +7,24 @@
         "editor.lineHighlightBackground": "#4f5353",
         // "editor.lineHighlightBorder": "#9292ac"
     },
-    "editor.renderWhitespace": "all",
     "cmake.configureOnOpen": true,
     "cmake.generator": "Ninja",
     "cmake.debugConfig": {
         "args": [
-            // "--gtest_filter="
+            // "--gtest_filter=xxx
         ]
     },
     "workbench.tree.indent": 12,
-    "cmake.buildDirectory": "${workspaceFolder}/build",
-    // "cmake.buildDirectory": "${workspaceFolder}/buildSrc",
+    // "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.buildDirectory": "${workspaceFolder}/buildSrc",
+    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
     "cmake.configureArgs": [
-        "-DCMAKE_EXPORT_COMPILE_COMMANDS=1"
+        // For clangd
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=1",
+        
+        "-DHERE_BUILD_TEST=1",
+        "-DHERE_BUILD_TESTS=1",
+
         // "-DCMAKE_BUILD_TYPE=Debug",
         // "-DCMAKE_CXX_FLAGS=-D_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION",
         // "-DBUILD_SHARED_LIBS=ON",
@@ -28,21 +33,22 @@
     "output.smartScroll.enabled": false,
     "editor.minimap.maxColumn": 80,
     "explorer.autoReveal": false,
-    "clang-tidy.checks": [
-        "-readability-identifier-length",
-        "-abseil-*",
-        "-altera-*",
-        "-android-*",
-        "-cert-*",
-        "-fuchsia-*",
-        "-bugprone-easily-swappable-parameters",
-        "-modernize-use-trailing-return-type",
-        "-readability-named-parameter",
-        "-cppcoreguidelines-init-variables",
-        "-cppcoreguidelines-non-private-member-variables-in-classes",
-        "-misc-non-private-member-variables-in-classes",
-        "-bugprone-unchecked-optional-access"
-    ],
+    // "clang-tidy.checks": [
+    //     "-readability-identifier-length",
+    //     "-abseil-*",
+    //     "-altera-*",
+    //     "-android-*",
+    //     "-cert-*",
+    //     "-fuchsia-*",
+    //     "-bugprone-easily-swappable-parameters",
+    //     "-modernize-use-trailing-return-type",
+    //     "-readability-named-parameter",
+    //     "-cppcoreguidelines-init-variables",
+    //     "-cppcoreguidelines-non-private-member-variables-in-classes",
+    //     "-misc-non-private-member-variables-in-classes",
+    //     "-bugprone-unchecked-optional-access"
+    // ],
+    "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
     "editor.tokenColorCustomizations": {
         "[One Dark Pro Mix]": {
@@ -62,11 +68,13 @@
             ]
         }
     },
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.fontSize": 14,
+    "editor.stickyScroll.enabled": false,
     "terminal.integrated.lineHeight": 1.3,
     "terminal.integrated.letterSpacing": 1,
     "workbench.editor.wrapTabs": true,
-    "editor.tabSize": 4,
-    "editor.detectIndentation": false,
     "workbench.colorCustomizations": {
         "tab.border": "#fff6",
         "titleBar.border": "#fff6",
@@ -75,16 +83,19 @@
     // "[cpp]": {
     //     "editor.defaultFormatter": "xaver.clang-format"
     // },
-    "editor.fontSize": 13.5,
     "files.associations": {
         "*.lime": "swift"
     },
     "git.openRepositoryInParentFolders": "always",
     "window.zoomLevel": 0.01,
     "cmake.options.statusBarVisibility": "visible",
-    "editor.stickyScroll.enabled": false,
-    // "C_Cpp.intelliSenseEngine": "disabled",
+    "cmake.showOptionsMovedNotification": false,
+    "[log][Log]": {
+        "editor.fontSize": 13,
+    },
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ]
     // "git.mergeEditor": true,
-    // "git.suggestSmartCommit": false,
-    // "editor.formatOnSave": true
 }
