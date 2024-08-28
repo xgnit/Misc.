@@ -11,9 +11,7 @@
     "cmake.generator": "Ninja",
     "cmake.debugConfig": {
         "args": [
-            // "--gtest_filter=ReturnToRouteUtilsTest.when_merging_point_is_roundabout_exit_then_merged_route_has_correct_exit" 
-            // "--gtest_filter=RealisticViewWarnerDispatcherTest.realistic_view_warnings_function_correctly_with_png_files" 
-            "--gtest_filter=MapStoreWithNavigationOcmTest*"
+            "--gtest_filter=*"
         ]
     },
     "workbench.tree.indent": 12,
