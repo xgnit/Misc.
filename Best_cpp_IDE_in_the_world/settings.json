@@ -11,7 +11,9 @@
     "cmake.generator": "Ninja",
     "cmake.debugConfig": {
         "args": [
-            // "--gtest_filter=xxx
+            // "--gtest_filter=ReturnToRouteUtilsTest.when_merging_point_is_roundabout_exit_then_merged_route_has_correct_exit" 
+            // "--gtest_filter=RealisticViewWarnerDispatcherTest.realistic_view_warnings_function_correctly_with_png_files" 
+            "--gtest_filter=MapStoreWithNavigationOcmTest*"
         ]
     },
     "workbench.tree.indent": 12,
@@ -21,10 +23,11 @@
     "cmake.configureArgs": [
         // For clangd
         "-DCMAKE_EXPORT_COMPILE_COMMANDS=1",
-        
+        // For navigation test targets
         "-DHERE_BUILD_TEST=1",
         "-DHERE_BUILD_TESTS=1",
 
+        // You might need them for gemini, but somehow it also compiles with out these options.
         // "-DCMAKE_BUILD_TYPE=Debug",
         // "-DCMAKE_CXX_FLAGS=-D_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION",
         // "-DBUILD_SHARED_LIBS=ON",
@@ -96,6 +99,7 @@
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
         "workbench.action.tasks.runTask"
-    ]
+    ],
+    "window.density.editorTabHeight": "compact"
     // "git.mergeEditor": true,
 }
