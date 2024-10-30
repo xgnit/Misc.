@@ -21,11 +21,7 @@
     "cmake.configureArgs": [
         // For clangd
         "-DCMAKE_EXPORT_COMPILE_COMMANDS=1",
-        // For navigation test targets
-        "-DHERE_BUILD_TEST=1",
-        "-DHERE_BUILD_TESTS=1",
 
-        // You might need them for gemini, but somehow it also compiles with out these options.
         // "-DCMAKE_BUILD_TYPE=Debug",
         // "-DCMAKE_CXX_FLAGS=-D_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION",
         // "-DBUILD_SHARED_LIBS=ON",
