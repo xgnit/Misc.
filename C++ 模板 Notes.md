@@ -1,3 +1,4 @@
+# C++14之后::type和::value的简写
 在c++14以后，有简写的方法。比如 `typename std::decay<T>::type` 就成了 `std::decay_t<T>`.
 
 `std::is_same<T1,T2>::value` 变成了 `std::is_same_v<T1, T2>`。
